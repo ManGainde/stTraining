@@ -67,5 +67,15 @@ choice = col1.selectbox(
 
 st.write("Le terrien que tu préfère est : ", choice)
 
+from datetime import time, datetime # ici car conflit avec l'autre package time sinon
+
+st.subheader('Range time slider')
+
+horaire = col3.slider(
+     "Quels sont tes horaires ?",
+     value=(time(9, 30), time(17, 30)))
+
+col3.write("Tes horaires sont:", horaire)
+
 
 
