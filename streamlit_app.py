@@ -56,3 +56,16 @@ st.write("Votre âge :", age_user)
 
 fourchette_salaire = st.slider("Entrer combien et combien, voudriez-vous que votre prochain salaire soit :", 30000, 80000, (35000,52000))
 st.write("Vous souhaitez que votre prochain salaire soit entre:", fourchette_salaire) #st.write est mieux que st.text pour ça
+
+st.title("Select Box")
+
+col1, col2, col3 = st.columns(3)
+choice = col1.selectbox(
+    'Quel est le terrien que tu préfères dans DBZ ?',
+    ('Tenshinhan', 'Tortue Géniale', 'Krillin')
+)
+
+st.write("Le terrien que tu préfère est : ", choice)
+
+
+
